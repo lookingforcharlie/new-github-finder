@@ -1,7 +1,7 @@
-import React, { useState, useContext } from 'react';
-import GithubContext from '../../context/github/GithubContext';
+import React, { useContext, useState } from 'react';
 import AlertContext from '../../context/alert/AlertContext';
 import { searchUsers } from '../../context/github/GithubActions';
+import GithubContext from '../../context/github/GithubContext';
 
 export default function UserSearch() {
   const [text, setText] = useState('');
@@ -39,7 +39,7 @@ export default function UserSearch() {
               <input
                 type='text'
                 className='w-full pr-40 bg-gray-200 input input-lg text-black'
-                placeholder='Search'
+                placeholder='Search developers'
                 value={text}
                 onChange={handleChange}
               />
